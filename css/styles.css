@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+/*para poner comentarios*/
+
+/*todos los h1 del documento*/
+/*selector por tipo*/
+h1 {
+    color:blue;
+
+}
+
+/*
+selector {
+    atributo:valor;
+}
+
+*/
+
+h2 {
+    color:rgb(0,0,0);
+    font-size: 25px;
+}
+p {
+    color: #001524f;
+}
+
+/*selector por id*/
+
+#parrafoVerde {
+    color:green
+}
+
+/*estilo por selector por clase*/
+
+.claseParrafoAzul {
+    color: blue;
+}
+
+.caja {
+    background-color: aqua;
+    height: 100px;    
+    font-size: 16px;
+    
+}
+
+.caja p {
+    color: black;
+}
+
+.caja h3 {
+    color: brown;
+}
+
+.textoItalic {
+    font-style: italic;
+}
+
+.textoBold {
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*fuente externa*/
+*{
+    font-family:  'Silkscreen', cursive;
+}
+
+/*colores */
+/*RGB (red, green, blue)*/
+/*RGB (0,0,0)*/
+/*RGB (100,50,0)*/
+/*RGB (255,255,255)*/
+
+p.color {
+    color: rgb(151, 41, 137);
+}
+
+/*rgb + alpha (0-1)*/
+p.colorAlpha {
+    font-size: 21px;
+    color: rgb(5,175, 200,0.4); /*0 es transparente*/
+
+}
