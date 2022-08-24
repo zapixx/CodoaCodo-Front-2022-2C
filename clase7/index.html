@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=}, initial-scale=1.0">
+    <title>Fieldset</title>
+    <style>
+        a {
+            color: red;
+            text-decoration: none;
+        }
+        li {
+            list-style: circle; /*decimal, none, circle, disc (defatult)*/
+        }
+        
+        .links {
+            
+        }
+        
+        /*herencia*/
+        .links li a {
+            color:green
+        }
+
+        #texto-color {
+            color: aliceblue;
+        }
+
+        .texto-color-important {
+            color: aqua !important; 
+        }
+
+        /*
+        important > inline > id > class
+        */
+
+        /*selector de atributos*/
+        [href] {/*con esto indico que ataco el atributo href*/
+            background-color: blueviolet;
+            text-decoration: line-through;
+        }
+
+        /*[href$=3]*/
+    
+        /*igual a= */
+        [id="nosotros"] {
+            background-color: red;
+        }
+
+        /*inicie con^= */
+        [id^="re"]{
+            background-color: burlywood;
+        }
+
+        /*que contenga *= */
+        [id*=ale]{
+            font-size: 25px;
+            color:blue;
+            padding: 15px;
+        }
+
+        /*termine con $= */
+
+        [id$="os"] {
+            color:green
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+            <header>
+                <nav>
+                    <ul class="links">
+                        <li>
+                            <a href="#nosotros"> Link1</a>
+                        </li>
+                        <li>
+                            <a href="link2"> Link2</a>
+                        </li>
+                        <li>
+                            <a href="link2"> Link2</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+        </section>
+        
+<section>
+    <p style="color: red" class="texto-color texto-color-important" id="#texto-color">Parrafo</p>
+</section>
+
+        <section>
+            <fieldset>
+                <legend>Oficiales</legend>
+                <form method="post">
+                    <input type="file" name="archivo">
+                    <button>
+                        enviar
+                    </button>
+                </form>
+            </fieldset>
+            
+        
+                        
+        <section id="nosotros">
+            <h3>nosotros</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A dolorum ullam obcaecati animi. Animi, saepe iure. Iste nihil non nulla repudiandae autem illum aperiam, aliquam, molestiae, doloremque amet odit quos!</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A dolorum ullam obcaecati animi. Animi, saepe iure. Iste nihil non nulla repudiandae autem illum aperiam, aliquam, molestiae, doloremque amet odit quos!</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A dolorum ullam obcaecati animi. Animi, saepe iure. Iste nihil non nulla repudiandae autem illum aperiam, aliquam, molestiae, doloremque amet odit quos!</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A dolorum ullam obcaecati animi. Animi, saepe iure. Iste nihil non nulla repudiandae autem illum aperiam, aliquam, molestiae, doloremque amet odit quos!</p>
+
+        </section>                
+        <section id="contacto">
+            <h3>Contacto</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A dolorum ullam obcaecati animi. Animi, saepe iure. Iste nihil non nulla repudiandae autem illum aperiam, aliquam, molestiae, doloremque amet odit quos!</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A dolorum ullam obcaecati animi. Animi, saepe iure. Iste nihil non nulla repudiandae autem illum aperiam, aliquam, molestiae, doloremque amet odit quos!</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A dolorum ullam obcaecati animi. Animi, saepe iure. Iste nihil non nulla repudiandae autem illum aperiam, aliquam, molestiae, doloremque amet odit quos!</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A dolorum ullam obcaecati animi. Animi, saepe iure. Iste nihil non nulla repudiandae autem illum aperiam, aliquam, molestiae, doloremque amet odit quos!</p>
+         </section>                
+        <section id="galería">
+            <h3>Galería</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A dolorum ullam obcaecati animi. Animi, saepe iure. Iste nihil non nulla repudiandae autem illum aperiam, aliquam, molestiae, doloremque amet odit quos!</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A dolorum ullam obcaecati animi. Animi, saepe iure. Iste nihil non nulla repudiandae autem illum aperiam, aliquam, molestiae, doloremque amet odit quos!</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A dolorum ullam obcaecati animi. Animi, saepe iure. Iste nihil non nulla repudiandae autem illum aperiam, aliquam, molestiae, doloremque amet odit quos!</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A dolorum ullam obcaecati animi. Animi, saepe iure. Iste nihil non nulla repudiandae autem illum aperiam, aliquam, molestiae, doloremque amet odit quos!</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A dolorum ullam obcaecati animi. Animi, saepe iure. Iste nihil non nulla repudiandae autem illum aperiam, aliquam, molestiae, doloremque amet odit quos!</p>
+        </section>                
+        <section id="regalería">
+            <h3>Galería</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A dolorum ullam obcaecati animi. Animi, saepe iure. Iste nihil non nulla repudiandae autem illum aperiam, aliquam, molestiae, doloremque amet odit quos!</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A dolorum ullam obcaecati animi. Animi, saepe iure. Iste nihil non nulla repudiandae autem illum aperiam, aliquam, molestiae, doloremque amet odit quos!</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A dolorum ullam obcaecati animi. Animi, saepe iure. Iste nihil non nulla repudiandae autem illum aperiam, aliquam, molestiae, doloremque amet odit quos!</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A dolorum ullam obcaecati animi. Animi, saepe iure. Iste nihil non nulla repudiandae autem illum aperiam, aliquam, molestiae, doloremque amet odit quos!</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A dolorum ullam obcaecati animi. Animi, saepe iure. Iste nihil non nulla repudiandae autem illum aperiam, aliquam, molestiae, doloremque amet odit quos!</p>
+        </section>                
+    </main>
+</body>
+</html>
